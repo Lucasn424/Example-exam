@@ -42,3 +42,28 @@ or the program is largely incomplete.
 
 def merge_sentences():
     return 
+
+
+
+
+lst1 =  ['the cow jumped over the moon']
+lst2 = ['jack and jill went up the']
+
+# new1 = (convert(lst1))
+# new2 = (convert(lst2))
+
+# print(len(new2))
+
+# # if len(new1) != (new2):
+# #     print("not equal")
+# # else:
+# #     print("correct")
+
+
+# def merge_sentences():
+#     return 
+
+result = [None]*(len(lst1)+len(lst2))
+result[::2] = lst1
+result[1::2] = lst2
+print(result)
