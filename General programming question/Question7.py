@@ -43,5 +43,24 @@ def greeting():
 
 
 
+def greeting(user, loc):
+    if loc == '':
+        loc = "London"
+    else:
+        loc == loc
+
+    print(f'Hello, {user}, how is {loc}?')
+
+
+username = "lucas"
+location = "Paris"
+
+print(greeting(username,location))
+
+
+
+
+
+
 
 
