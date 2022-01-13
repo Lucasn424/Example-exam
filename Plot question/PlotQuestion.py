@@ -37,3 +37,30 @@ improved (e.g., the students used unnecessary if statements)
 #   data in the 3rd column on the y axis, data in the 1st column on the x axis). 
 # - Add an xlabel as "Time [s]" and a ylabel as "Speed [m/s]"
 #
+
+
+import os
+import matplotlib.pyplot as plt
+os.chdir("Plot question")
+os.chdir("Data")
+
+with open("data.txt", "r") as file:
+    textData = file.read()
+
+listData = textData.split()
+
+data1 = []
+data2 = []
+data3 = []
+for i in range(7,len(listData),7):
+    data1.append(float(listData[i]))
+    data2.append(float(listData[i+2]))
+    data3.append(float(listData[i+5]))
+
+plt.plot(data1,data3)
+plt.plot(data1,data2)
+
+plt.xlabel("Time [s]")
+plt.xlabel("Force [N]")
+
+plt.show()
