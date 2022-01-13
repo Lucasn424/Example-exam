@@ -70,7 +70,11 @@ or the program is largely incomplete.
 #                   2. the second item is 'grade' (expressed with a float from 1 to 100)
 #                   (e.g. {'computing': {'year': 1, 'grade': 87.5})
 
-
+class Dtudent:
+    def __init__(self, course, year, grade):
+        self.course = course 
+        self.year = int(year)
+        self.grade = float(grade)
 
 
 # Create a method called add_course(). It should:
@@ -82,7 +86,10 @@ or the program is largely incomplete.
 #           if the user writes "no" or "n", ignore it. 
 #           keep asking the question until the user inputs either yes/y or no/n
 #        - if the course does not already exist in the dictionary, add a new entry
-
+    def add_course(self):
+        self.grade == "None"
+    
+    
 
 # Create a method called change_grade(). It should:
 #   - have 2 parameters: 'course', grade
@@ -92,6 +99,14 @@ or the program is largely incomplete.
 #          if the user says "yes" or "y", ask for the year of the course and then add the new course accordingly,
 #          if the user writes "no" or "n", ignore it. 
 #           keep asking the question until the user inputs either yes/y or no/n
+
+    def change_grade(self, course, grade):
+        if self.course == course:
+            self.grade == grade 
+        else:
+            a = print(input("course does not exist, do you want to make one?")
+
+ifsdf = str(input("course does not exist, do you want to make one?"))
 
 
 
