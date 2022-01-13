@@ -37,3 +37,26 @@ or the program is largely incomplete.
 def value_greatest_even():
     return 
 
+def value_greatest_even():
+    return 
+
+
+newdict = {'hi':5, 'hello':2, 'hey':3}
+
+newlist = list()
+for i in newdict.values():
+    newlist.append(i)
+
+print(newlist)
+
+def highest_even(li):
+  evens = []
+  for item in li:
+    if item % 2 == 0:
+      evens.append(item)
+  return max(evens)
+
+print(highest_even(newlist))
+
+
+
