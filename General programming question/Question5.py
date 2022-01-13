@@ -37,6 +37,17 @@ or the program is largely incomplete.
 def longest_key():
     return 
 
+newdict = {'hi':3, 'hello':2, 'hey':3}
+
+newlist = list()
+for i in newdict.keys():
+    newlist.append(i)
+
+print(max(newlist, key=len))
+
+
+
+
 
 
 
