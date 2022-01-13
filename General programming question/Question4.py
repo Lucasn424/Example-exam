@@ -43,3 +43,27 @@ or the program is largely incomplete.
 def question_mark():
     return 
 
+
+def question_mark():
+    return 
+
+def QuestionsMarks(str):
+    a = 11
+    b = 'false'
+    c = 0
+    for i in str:
+        if i.isdigit():
+            if int(i) + a == 10:
+                if c != 3:
+                    return 'false'
+                b = 'true'
+            c = 0
+            a = int(i)
+        elif i == '?':
+            c += 1
+    return b
+
+input = "sdfhdsl4??sfasdfga?1sdjkfhbdsjhfkb"
+input2 = "sdfhdsl4??sfasdfga?6sdjkfhbdsjhfkb"
+
+print(QuestionsMarks(input2))
